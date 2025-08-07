@@ -1,5 +1,5 @@
 streamlit==1.32.2
 pyotp==2.9.0
-qrcode[pil]==7.4.2
+qrcode==7.4.2
 sqlalchemy==2.0.30
 pandas==2.2.2
