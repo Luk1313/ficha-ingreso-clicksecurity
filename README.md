@@ -1,37 +1,44 @@
 # 📋 ficha-ingreso-clicksecurity
 
-Formulario digital automatizado de ingreso para nuevo personal de seguridad en CLIC Security, con autenticación 2FA mediante OTP y generación de QR para verificación.
+Formulario digital automatizado para el ingreso de nuevo personal de seguridad en **CLIC Security**, con autenticación 2FA mediante OTP, generación de códigos QR y envío de notificaciones automáticas para validación.
 
 ---
 
 ## 🚀 Descripción del Proyecto
 
-Este proyecto permite registrar digitalmente a nuevos colaboradores de seguridad utilizando una interfaz amigable con [Streamlit](https://streamlit.io/). Incluye:
+Este proyecto permite registrar digitalmente a nuevos colaboradores de seguridad a través de una interfaz interactiva basada en **Streamlit**.
 
-- Captura de datos personales
-- Generación automática de claves OTP tipo Google Authenticator
+### 🔐 Funcionalidades:
+- Captura y registro de datos personales
+- Generación automática de claves OTP (Google Authenticator)
 - Autenticación en dos pasos (2FA)
-- Generación de QR para enrolamiento rápido
-- Almacenamiento en base de datos local con SQLAlchemy
-- Preparado para integraciones futuras (Dashboards, reportes, alertas, etc.)
+- Generación de códigos QR para enrolamiento seguro
+- Notificación por correo cuando un nuevo ingreso es detectado
+- Verificación en base de datos (registro nuevo o modificado)
 
 ---
 
-## 🧰 Tecnologías y librerías utilizadas
+## 🧰 Requisitos del Sistema
 
-- `Python 3.10+`
-- `Streamlit` - Interfaz web simple y rápida
-- `PyOTP` - Generación de claves 2FA (TOTP)
-- `qrcode[pil]` - Códigos QR de enrolamiento
-- `SQLAlchemy` - ORM para guardar datos
-- `pandas` - Manipulación de datos
+- Python 3.10 o superior
+- Navegador web (para interfaz Streamlit)
 
 ---
 
-## 🛠️ Instalación y ejecución
+## 📦 Instalación
 
-1. Clona el repositorio:
+1. Clona este repositorio:
 
 ```bash
 git clone https://github.com/Luk1313/ficha-ingreso-clicksecurity.git
 cd ficha-ingreso-clicksecurity
+
+
+python -m venv venv
+source venv/bin/activate  # en Linux/macOS
+venv\Scripts\activate     # en Windows
+
+
+pip install -r requirements.txt
+
+
